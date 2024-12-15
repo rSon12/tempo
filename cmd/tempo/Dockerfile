@@ -1,4 +1,4 @@
-FROM alpine:3.20 AS certs
+FROM alpine:3.21.0 AS certs
 RUN apk --update add ca-certificates
 ARG TARGETARCH
 COPY bin/linux/tempo-${TARGETARCH} /tempo
